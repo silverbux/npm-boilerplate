@@ -1,55 +1,45 @@
-# NPM Boilerplate [![Build Status](https://secure.travis-ci.org/sdeering/npm-boilerplate.png)](http://travis-ci.org/sdeering/npm-boilerplate)
+# IMPORTANT: STILL UNDER DEVELOPMENT
 
-> A good starting point for your new Node.js NPM packages.
+# NGCODE [![Build Status](https://secure.travis-ci.org/silverbux/ngcode.png)](http://travis-ci.org/silverbux/ngcode)
 
-
-## Create a new package
-
-1. `$ git clone git@github.com:sdeering/npm-boilerplate.git`
-2. `$ mv npm-boilerplate <your-npm-package-name>`
-3. `$ cd <your-npm-package-name>`
-
-Then change the following fields below to adhere to [NPM package rules](https://www.npmjs.org/doc/misc/npm-developers.html#What-is-a-package).
+> An AngularJS code generator, implementing john papa's [angular-styleguide](https://github.com/johnpapa/angular-styleguide).
 
 
-## NPM Policies
+Install this globally and you'll have access to the ngcode command anywhere on your system.
 
- * Update `package.json`: name, version, description, keywords, homepage, author, repository, main, licenses.
-
-[Read more about package.json fields](https://www.npmjs.org/doc/files/package.json.html).
-
-
-## Customise
-
-Some things you might want to change/update.
-
- * Change Node.js versions for test in `.travis.yml`.
- * Change `LICENCE`.
- * Change `README`.
-
-
-## Example Usage
-
-```
-var ModuleName = require('your-npm-package-name'); //or npm package name
-console.log(ModuleName.functionName());
+```shell
+npm install -g ngcode
 ```
 
 
-## TEST
+#### Example Usage
 
-Testing is provided by MOCHA.
+##### Generate Directive
+```
+ngcode directive:mydirective
+```
 
-Either run in bash `$ npm test` or the full command `$ ./node_modules/.bin/mocha --reporter spec`.
+##### Generate Controller
+```
+ngcode controller:mycontroller
+```
 
-![MOCHA TEST](https://raw.githubusercontent.com/sdeering/npm-boilerplate/master/test/npm-boilerplate-test.jpg "MOCHA TEST")
+##### Generate Factory
+```
+ngcode factory:myfactory
+```
+
+##### Generate Module
+```
+ngcode module:mymodule
+```
 
 
 ## LICENSE
 
 (MIT License)
 
-Copyright (c) 2014 sdeering <samdeering@gmail.com>
+Copyright (c) 2014 aquiambao <alexquiambao@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
